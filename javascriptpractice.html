@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> --> 
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="javascript-title">JavaScript</h1>
+<!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='javascriptmain.html';">JavaScript Information</button>
+        <button class="content-but" onclick="window.location.href='javascriptpractice.html';"">JavaScript Practice</button>
+        <button class="content-but" onclick="window.location.href='dommain.html';">DOM Information</button>
+            <button class="content-but" onclick="window.location.href='dompractice.html';"">DOM Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/javascripttopimage.jpg">
+      <p class="caption">Image by Karina Zhukovskaya via Pexels</p>
+    </div>
+  </div>
+  <!-- introduction to what this page is -->
+  <div class="practice-intro">
+    <div class="practice-side">
+      <h1 class="topic-define">Practice</h1>
+      <p class="topic-info">The exercises below are optional, and are meant to help you practice your newly learned skills. Each option increases in difficulty. There is also a video tutorial available if you would like to see an example of how to complete each practice. There is a link at the bottom of every page to additional resources that provide more help and information.</p>
+    </div>
+    <div class="practice-side">
+       <iframe class="practice-vid" src="https://www.youtube.com/embed/BUxoAthszjQ?si=pG9nTwsMFZh2eWSA" title="YouTube video player" controls width="500"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- actual options for the practice -->
+  <div class="practice-options">
+    <div class="option">
+      <h1 class="practice">Practice 1</h1>
+      <img src="Images/JavaScriptpractice1.png" class="practice-img">
+      <p class="practice-directions">Declare some string variables. Print them out to the console. Declare some number variables. Print out a solution after using the variables in some math operation.</p>
+    </div>
+    <div class="option">
+      <h1 class="practice">Practice 2</h1>
+      <img src="Images/JavaScriptpractice2.png" class="practice-img">
+      <p class="practice-directions">Declare a function with a parameter that prints out a phrase with interpolation. Call the function with at least 3 different arguments.</p>
+    </div>
+    <div class="option">
+      <h1 class="practice">Practice 3</h1>
+      <img src="Images/JavaScriptpractice3.png" class="practice-img">
+      <p class="practice-directions"> Make an array of objects. Iterate through each element to create some sort of output.(interpolation, conditionals, etc.)</p>
+    </div>
+  </div>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

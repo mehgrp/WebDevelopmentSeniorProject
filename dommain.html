@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> -->
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="dom-title">DOM</h1>
+  <!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='javascriptmain.html';">JavaScript Information</button>
+        <button class="content-but" onclick="window.location.href='javascriptpractice.html';"">JavaScript Practice</button>
+        <button class="content-but" onclick="window.location.href='dommain.html';">DOM Information</button>
+        <button class="content-but" onclick="window.location.href='dompractice.html';"">DOM Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/javascripttopimage.jpg">
+      <p class="caption">Image by Karina Zhukovskaya via Pexels</p>
+    </div>
+  </div>
+<!-- What is the DOM? What does it do? -->
+  <container class="topics">
+    <div class="topic-division-single">
+      <div class="flexbox">
+        <h1 class="topic-define">The DOM</h1>
+        <p class="topic-info">(Before getting into the DOM, this will only be a brief introduction due to the overwhelming amount of content regarding the DOM. There are plenty of outside resources that provide more information on this topic.)The DOM aka Document Object Model represents how the browser reads HTML. It allows JS interaction w/ HTML allowing us to manipulate, structure, and style websites. Going along with our body analogy, the DOM acts as the body’s brain. DOM manipulation is making changes in the browser that are prompted yet not directly created by the user. Now that we’re learning about the DOM, we can learn about jQuery. JQuery is a popular library that has chunks of code in JavaScript that someone else wrote. This means that there’s less for us to write. Before using any code from the library make sure there's a script element leading to JQuery within the head element of your HTML. Some IDEs, like Replit, will already have this in there.</p>
+      </div>
+    <!-- How to access elements? -->
+      <div class="flexbox">
+        <div class="vertical-info">
+          <h1 class="topic-define">Access HTML Elements</h1>
+          <p class="topic-info">First of all we do a lot of work in the console through our IDE. However you could also view the console for any webpage on chrome. Here’s how to access chrome developer tools. Right click the page then Inspect. A popup on the right side should appear with stuff like elements and console. Console works just like the one we use in Replit, so it isn’t totally necessary sometimes. However, chrome developer tools don’t open/ work on school chromebooks. Before we make things functional we have to know how to access elements from the DOM first. Luckily, jQuery has built-in features that allow us to easily access elements from the DOM.</p>
+          <p class="topic-info">The syntax in JavaScript is similar to what you would use for interpolation. However, in this situation it has a different purpose and meaning. “$” is what tells the browser to go to HTML and find the argument/element. Inside the parentheses is the actual element/argument you want it to find. Instead of the type of element you could also access elements by their class name for more specificity. Since we stored this in a variable we can console.log the variable to see the element. The last line should be what prints out in the console, which should be the text in that element in HTML.</p>
+          <img class="topic-img" src="Graphics/DOMaccessHTML.png" alt="In HTML:
+            <h1>Hello World!</h1>
+
+            In JavaScript:
+            var header = $(`h1`);
+            console.log(header.text());
+            //in the console// Hello World!">
+        </div>
+      </div>
+    </div>
+    <!-- What are events? How do they work? -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Events</h1>
+        <p class="topic-info">An event is basically any action that a user takes while on our site eg. clicking, scrolling, hovering, etc. Events are what really allow DOM manipulation to take place. First, you need an event listener. An event listener will sit and wait for an event to take place then call a function when it does. Then, there are event handlers. Event handlers are the actual function that’s called when an event occurs.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/DOMaccessCSS.png" alt="var changeBackgroundBtn = $(“.change-background-btn”);
+          var container = $(“div”);
+  
+  
+          changeBackgroundBtn.on(“click”, changeBackgroundColor);
+  
+  
+          function changeBackgroundColor() {
+            container.css(“backgroundColor”, “mediumaquamarine”);
+          }">
+      </div>
+    </div>
+    <!-- How to access CSS? -->
+    <div class="topic-division">
+        <h1 class="topic-define">Access CSS</h1>
+        <p class="topic-info">Similar to HTML where we can change the text that appears on the screen, with CSS we can change the style of the text when an event occurs.</p>
+        <p class="topic-info">First we declare variables and store a button and div in them. Next is declaring the event listener. Then, the function changeBackgroundColor() is our event handler. Inside the function the container variable is called to go to CSS rules of the div element through “.css” which takes 2 arguments: a property and a value.  “backgroundColor” is the property then comes the value you want to update the property to.</p>
+    </div>
+  </container>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+  
+
+</body>
+
+</html>

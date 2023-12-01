@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> --> 
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="css-title">CSS</h1>
+      <!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='cssmain.html';">CSS Information</button>
+        <button class="content-but" onclick="window.location.href='csspractice.html';"">CSS Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/csstopimage.jpg">
+      <p class="caption">Image by Cup of Couple via Pexels</p>
+    </div>
+  </div>
+  <!-- introduction to what this page is -->
+  <div class="practice-intro">
+    <div class="practice-side">
+      <h1 class="topic-define">Practice</h1>
+      <p class="topic-info">The exercises below are optional, and are meant to help you practice your newly learned skills. Each option increases in difficulty. There is also a video tutorial available if you would like to see an example of how to complete each practice. There is a link at the bottom of every page to additional resources that provide more help and information.</p>
+    </div>
+    <div class="practice-side">
+      <iframe class="practice-vid" src="https://www.youtube.com/embed/XL1nV2dBmdg?si=1XoGpYhjH_ptyLia" title="YouTube video player" controls width="500"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- actual options for the practice -->
+  <div class="practice-options">
+    <div class="option">
+      <h1 class="practice">Practice 1</h1>
+      <img src="Images/CSSpractice1.png" class="practice-img">
+      <p class="practice-directions">Create 3 buttons in HTML. In CSS, design each button differently(use class names). One of the 3 needs to have some sort of change on hover.</p>
+    </div>
+    <div class="option">
+      <h1 class="practice">Practice 2</h1>
+      <img src="Images/CSSpractice2.png" class="practice-img">
+      <p class="practice-directions">Create a photo gallery page. It can be about any topic, but every image has to be related in some way. Make sure there’s a heading at the top with the topic/theme of your gallery. Use flexbox to change the layout. Use at least 9 images. Height and width is up to you.</p>
+    </div>
+    <div class="option">
+      <h1 class="practice">Practice 3</h1>
+      <img src="Images/CSSpractice3.png" class="practice-img">
+      <p class="practice-directions"> Go back to the about page you created for the HTML practice. Use flexbox. Every link or button should have a special effect when hovered over. Get creative with the color palette. Keep in mind that you can change the padding and margins of every element.</p>
+    </div>
+  </div>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

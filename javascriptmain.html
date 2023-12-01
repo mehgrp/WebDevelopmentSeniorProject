@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> -->
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="javascript-title">JavaScript</h1>
+<!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='javascriptmain.html';">JavaScript Information</button>
+        <button class="content-but" onclick="window.location.href='javascriptpractice.html';"">JavaScript Practice</button>
+        <button class="content-but" onclick="window.location.href='dommain.html';">DOM Information</button>
+        <button class="content-but" onclick="window.location.href='dompractice.html';"">DOM Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/javascripttopimage.jpg">
+      <p class="caption">Image by Karina Zhukovskaya via Pexels</p>
+    </div>
+  </div>
+<!-- what is JavaScript -->
+  <container class="topics">
+    <div class="topic-division-single">
+      <div class="flexbox">
+        <h1 class="topic-define">JavaScript</h1>
+        <p class="topic-info">JavaScript acts as the body’s muscle, bringing functionality to a website. Makes websites more dynamic. An actual programming language.</p>
+      </div>
+    <!-- What are data types? -->
+      <div class="flexbox">
+        <div class="vertical-info">
+          <h1 class="topic-define">Data Types</h1>
+          <p class="topic-info">A data type is a specific kind of data/information, different types will be interpreted differently by the program.</p>
+          <p class="topic-info">Strings - primitive JavaScript data type. A series of characters enclosed in either double quotes or single quotes. (can hold any character)</p>
+          <p class="topic-info">Numbers - primitive JavaScript data type. Don't need quotes. </p>
+          <p class="topic-info">Printing in the console typically has this syntax:</p>
+          <p class="topic-info">console.log();</p>
+          <p class="topic-info">With your string or variable in the parentheses. JavaScript will still work if there wasn’t a semicolon at the end, however it’s good practice especially if you plan to learn other languages. </p>
+        </div>
+      </div>
+    </div>
+  <!-- What are variables?How to declare them? -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Variables</h1>
+        <p class="topic-info">How to declare and initialize a variable.</p>
+        <p class="topic-info">var defines a variable, followed by an arbitrary name to refer to the variable. Follow camelCase rules. Only the first letter of a second/third/etc. word in a variable name should be capitalized. The first word is completely lowercase. = or the assignment operator will determine what value the variable holds. In this case the value is a string of my name. Any variable can be printed to the console.</p>
+        <p class="topic-info">If you ever need to reassign a variable, just type the name of the variable you want to change followed by the assignment operator then the new value you want.</p>
+      </div>
+      <div class="topic-side">
+      <img class="topic-img" src="Graphics/JSVarDecRea.png" alt="var name = “Meghan”;  console.log(name);
+        --> Meghan  name = “student”;">
+      </div>
+    </div>
+    <!-- math w/ variables -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Math with Variables</h1>
+        <p class="topic-info">Numbers can also be stored in variables. Variables that store numbers can be reassigned with a math operation. Math operators can be applied to numbers like usual, parenthesis, and order of operations all act regularly in JavaScript. Also math can be applied to variables that hold numbers.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/JSMathwVar.png" alt="var a = 5;
+          var b = 10;
+          var c = 3;
+          var avg = (a+b+c)/3">
+      </div>
+    </div>
+  <!-- What is interpolation? -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <img class="topic-img" src="Graphics/InterpolationSyntax.png" alt="var name = “Meghan”;
+          var grade = 12;
+          console.log(`Hi! My name is ${name} and I am a student at the Math and Science Academy. I’m currently in ${grade}th grade`);">
+      </item>
+      <item class="flexbox">
+        <h1 class="topic-define">Interpolation</h1>
+        <p class="topic-info">Interpolation is including variable data in sentences we want printed out by the console.</p>
+        <p class="topic-info">Important note: interpolation doesn’t use quotes. It uses the back tick at the top left of the keyboard. If you use quotation marks the interpolation won’t work.</p>
+      </item>
+    </div>
+  <!-- How do you compare in JavaScript? What are conditionals? -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <h1 class="topic-define">Comparison Operators</h1>
+        <p class="topic-info">Comparison operators can compare or define the relationship between what gets compared. In an expression, it will be evaluated to a boolean, another data type, which has two options; true or false. Here's a list of comparison operators</p>
+      </item>
+      <item class="flexbox">
+        <img class="topic-img" src="Graphics/ComparisonOperators.png" alt="<
+        >
+        <=
+        >=
+        “WebDev” == “webDev”
+        => false
+        “WebDev”!=”webDev”
+        =>true">
+      </item>
+    </div>
+    <!-- comparing variables -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <h1 class="topic-define">Comparing Variables</h1>
+        <p class="topic-info">Comparison operators will also work when comparing variables.(= x3 means same value AND same type)</p>
+        <img class="topic-img" src="Graphics/ComparingVariables.png" alt="var topic = “Web Development”;
+      
+            topic ===  “webdev”
+            =>false
+      
+            topic===”Web Development”
+            =>true">
+      </item>
+    <!-- logical operators -->
+      <item class="flexbox">
+        <h1 class="topic-define">Logical Operators</h1>
+        <p class="topic-info">Logical operators allow you to make your program more efficient by checking multiple statements in one line. If only 1 of the conditions you want to check need to be met then you can use || or the “or” logical operator. If you want all or both conditions to be met then use the “and” operator &&.</p>
+        <img class="topic-img" src="Graphics/LogicalOperators.png" alt="var topic = Web Development;
+        topic=== webdev || Web Development
+        --> true
+        topic=== webdev && Web Development
+        -->false">
+      </item>
+    </div>
+    <!-- Conditionals -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Conditionals</h1>
+        <p class="topic-info">Conditionals will tell our program to do something only if a condition is met. Python or Java has a similar concept. On a regular website there’s hundreds of conditionals in the code, which allows for more customization for each user. Conditionals in JavaScript allows us to ask questions and provide certain outcomes based on the answer. Inside the parenthesis has to be an expression to evaluate, which can be called a condition. Here’s an example:</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/Conditionals.png" alt="var favePet= “Cats”;
+    
+          if (favePet === “Cats”) {
+            alert(“Of course!”)
+          }
+          else {
+            alert(“Are you sure??”)
+          }">
+      </div>
+    </div>
+    <!-- else if statements -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Else If Statements</h1>
+        <p class="topic-info">The last example was an If statement. You can also look at more conditions through the use of an else if statement.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/ElseIfstatements.png" alt="var favePet= “Cats”;
+  
+        if (favePet === “Cats”) {
+          alert(“Of course!”)
+        }
+        else if(favePet === “Dogs”) {
+          alert(“Okay..”)
+        }
+  
+        else {
+          alert(“Are you sure??”)
+        }">
+      </div>
+    </div>
+    <!-- What is a function? -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <div class="vertical-info">
+          <h1 class="topic-define">Functions</h1>
+          <p class="topic-info">A function is basically an action in our code. There are a lot of functions when making a website. For example, clicking a button and something happens, like new data appearing on the screen. These are a result of functions in the code. Know that a function will only occur when a specific action is performed, but can occur as many times as we need. Before we can make a function happen we need to know how to declare or write a function.</p>
+        <p class="topic-info">Whenever you’re declaring or creating a function, always start with “function” followed by the name you would like the function to be. Typically this name describes what the action is and should follow camelCase. Followed by the name is open and closed parentheses then open and close curly braces. Whatever code you put in the curly braces will be what happens when you call the function. To call the function so it does something just type the function name with the parenthesis.</p>
+          <img class="topic-img" src="Graphics/DeclareCallFunction.png" alt="function sayGreeting() {
+            console.log(“Hey!”);
+            console.log(“How are you?”);
+            }
+
+            sayGreeting();">
+        </div>
+      </item>
+      <item class="flexbox">
+        <h1 class="topic-define">Functions with Parameters</h1>
+        <p class="topic-info">In order to make functions more specific rather than general we can make use of arguments and parameters. Parameters are what’s written in the parenthesis and can be written when you’re actually declaring your function. They act like a variable. So, when you write your function with a parameter variable make sure you follow the rules for interpolation. You can also have multiple parameters as long as they’re separated by a comma and space. When you call the function, the parenthesis before were empty, but now you can put in a value or argument to assign to your parameter. Although we’re looking at a string here, if you use a number parameter you can use it like a variable to do calculations in your function.</p>
+        <img class="topic-img" src="Graphics/FunctionswParameters.png" alt="function sayGreeting(friendName) {
+          console.log(`Hey ${friendName}!`);
+          console.log(“How are you?”);
+          }
+
+          sayGreeting(Meghan);">
+      </item>
+    </div>
+    <!-- Functions w/ return -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Functions that Return</h1>
+        <p class="topic-info">Sometimes you might not want to directly print out the output in the console, but want to use the value for something else. In this case we can use return values. However there are important things to note when using return. A function can only return one value, make sure to explicitly state what you want to return, and the return line should be the last one in your function. The program will exit the function once the return line is read, which means any code after the return within the function will be ignored.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/FunctionswReturn.png" alt="function timeToWalk(numberOfDogs) {
+            var totalMinutes = numberOfDogs * 15;
+            return totalMinutes;
+          }
+  
+          var minutes = timeTowalk(3);
+          console.log{`You should walk a total of ${minutes} minutes.`};">
+      </div>
+    </div>
+    <!-- What are Arrays? -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <div class="vertical-info">
+          <h1 class="topic-define">Arrays</h1>
+          <p class="topic-info">Arrays are a complex data type unlike strings or numbers. An array is an ordered collection that stores multiple values, and can store any kind of element(strings, numbers, other arrays) as long as they are all the same type. In JavaScript, an element is each item inside of an array. An array will start and end with these brackets[ ] with each element separated by a comma. Most of the time they are assigned to variables.</p>
+          <p class="topic-info">Every element in an array is automatically assigned a number called an index starting from 0 and on. We can use the index to access a specific element of the array. Syntax for this is the name followed by the index in square brackets.</p>
+          <p class="topic-info">We can also see how many elements are in an array by using the .length property.</p>
+          <p class="topic-info">You can use the index access to update the array or an element. Use the syntax to access the index then the assignment operator followed by what you want to update it to.</p>
+          <p class="topic-info">If you don’t want to replace an element there’s also the ability to add or remove elements. To add an element use the .push() method, which will add the element to the end of the array. The inside of the parenthesis should be what you want to add.</p>
+          <p class="topic-info">If you want to remove an element you can use either the .pop() or .shift() method, which will remove the last and first element respectively. Neither need an argument unlike the .push() method.</p>
+        </div>
+      </item>
+      <item class="flexbox">
+        <img class="topic-img" src="Graphics/JSArrays.png" alt="var languages = [“English”,  “Spanish”,  “French”, ”Mandarin”];  languages[2];
+        => French  languages.length;
+        =>4  languages[2] = “German”;  languages.push(“Arabic”);">
+      </item>
+    </div>
+    <!-- What is iteration? How can we do it in JavaScript? -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/ForEachLoopArray.png" alt="var numbers = [1, 5, 15, 32, 9, 21, 7, 81, 29];
+  
+          var largeNumbers = [ ]; 
+          // placeholder element that will eventually store all elements that are greater than 10
+  
+          numbers.forEach(function(number) {
+          if (number > 10) {
+          largeNumbers.push(number);
+            }
+          });">
+      </div>
+      <div class="topic-side">
+        <h1 class="topic-define">Iteration</h1>
+        <p class="topic-info">Iteration is the process of repeating a task for each item in a collection. Iteration is more efficient for us since we don’t have to write a function for each specific element in an array. We can just write one function and have it repeat for each element.</p>
+        <p class="topic-info">languages.forEach(function(name) {
+          console.log(name);
+        });</p>
+        <p class="topic-info">.forEach() is a built in function that runs through every element in an array. The only argument it can take is a function. “name” is the variable representing the current element being iterated over. “console.log” is the code that will run for each element. To take iteration even further we can learn how to use placeholder arrays. This is because we may not want to do the same thing to each element.</p>
+      </div>
+    </div>
+    <!-- What are objects? -->
+    <div class="topic-division-single">
+      <div class="flexbox">
+        <div class="vertical-info">
+          <h1 class="topic-define">Objects</h1>
+          <p class="topic-info">An object is a complex data type and a collection like an array, however each item has a label rather than an index number. Each data value has a label or key. key/value pairs provide an associative relationship. To further explain, an associative relationship means having a title/label for the info. This is different from arrays, which is one reason we might use it, and the other is that we don’t need it to be in a specific order.</p>
+          <img class="topic-img" src="Graphics/ObjectSyntax.png" alt="var languages = {
+            english: “America”, 
+            spanish: “Spain”,
+            french: “France”,
+            mandarin: “China”
+          }  console.log(objectName.key);">
+        </div>
+      </div>
+      <div class="flexbox">
+        <h1 class="topic-define">Object Syntax</h1>
+        <p class="topic-info">Start with the syntax for a regular variable. Unlike arrays, objects use the curly braces. Keys are on the left followed by a colon and then their associated value. Keys should follow camelCase. In this case languages are the key while the value is the country they’re spoken in. Each pair should be separated by a comma. Another difference from arrays is that objects can hold multiple data types like strings and numbers while arrays can only hold one type. In order to access a value in an object we use dot notation syntax. It should be the name of the object then a dot then the label or key of the value we want. To make things even more complex, know that you could also make an array of objects.</p>
+      </div>
+    </div>
+  </container>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+  
+
+</body>
+
+</html>

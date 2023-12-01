@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> -->
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="html-title">HTML</h1>
+      <!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='htmlmain.html';">HTML Information</button>
+        <button class="content-but" onclick="window.location.href='htmlpractice.html';"">HTML Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/htmltopimage.jpg">
+      <p class="caption">Image by Cup of Couple via Pexels</p>
+    </div>
+  </div>
+<!-- what is HTML + what is the basic syntax -->
+  <container class="topics">
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">HTML</h1>
+        <p class="topic-info">HTML stands for Hypertext Markup Language. Analogous to the body’s skeleton/foundation of a website. Not an actual programming language like Java, PHP, Python, etc. All websites are built with HTML.</p>
+        <h1 class="topic-define">Basic Syntax</h1>
+        <p class="topic-info">Basically, the syntax for HTML comes down to just text and tags. For example if we wanted to say the phrase “Hello World!” is a paragraph, in HTML it would look like this.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/BasicHTMLSyntax.png" alt="<p>Hello World!</p>  Let’s break this down. <p> is a tag telling the browser that whatever text comes after should be considered a paragraph. <> are just brackets while “p” is the character that symbolizes a paragraph in HTML. The first tag that appears is also called the opening tag. The closing tag will look just like the opening tag, except with a forward slash after the opening bracket. Most elements have a closing tag while some do not, for example the img tag. The block of code shown above can be considered an HTML element.">
+      </div>
+    </div>
+  <!-- what are attributes -->
+    <div class="topic-division">
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/AttributeSyntax.png" alt="<img src = “ filename.jpg “ alt = “alternate text “>  Notice how for an image element there is no closing tag. The src attribute holds the link or source of the image you want to display(link address or file in IDE). It’s not required but good practice to also provide an alt attribute for image elements. The alt attribute lets you put in text that will be displayed in case the image fails to display, or if a screen reader is used it will read the alt text to the user. Next let’s look at another common way to use attributes. Links!">
+      </div>
+      <div class="topic-side">
+        <h1 class="topic-define">Attributes</h1>
+        <p class="topic-info">Attributes provide additional information or properties of elements. They are always found in the opening tag or start of an element, and the value of the attribute is put in quotes. They can be added to any HTML element. The most common attributes are seen paired with link and image tags; href and src attributes respectively and class attributes. This is an example for image elements.</p>
+      </div>
+    </div>
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Attributes pt.2</h1>
+        <p class="topic-info">The opening tag has *a* which means it’s an anchor element, but is more commonly referred to as a link element, href means hyper reference and inside the quotes is the web address. After the opening tag you can provide what text you want displayed and linked. Then remember to put a closing tag.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/LinkElementSyntax.png" alt="<a href = “(portfolio link)”> Meghan’s Portfolio </a>">
+      </div>
+    </div>
+  <!-- What is nesting? What are containers? How to use classes? -->
+    <div class="topic-division-single">
+      <item>
+        <h1 class="topic-define">Nesting</h1>
+        <p class="topic-info">Nesting is when 1 or more elements live inside another element. A common and easy example of this is when a word/phrase in a paragraph is linked/bolded/italicized.</p>
+        <img class="topic-img" src="Graphics/NestingExample.png" alt="<p> Studio Ghibli is a famous Japanese Animation studio that has produced <strong> award-winning </strong>films such as <cite><a href =”https://en.wikipedia.org/wiki/Spirited_Away”> Spirited Away </a></cite> and <cite><a href=”https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_(film)”>Howl’s Moving Castle</a></cite>.</p>">
+      </item>
+      <item>
+        <h1 class="topic-define">Containers</h1>
+        <p class="topic-info">Notice how when nesting elements, closing tags are in reverse order of the opening tags. Nesting also typically involves the use of container elements. Container elements help with formatting and grouping elements together. Some common container elements are div, nav, header, section, footer etc. Here’s an example.</p>
+        <img class="topic-img" src="Graphics/ContainerExample.png" alt="<div>
+            <h1>This is a header</h1>
+            <button> This is a button</button>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>">
+        <p class="topic-info">Make sure indentation is correct. This helps with knowing your containers/parent elements, what’s inside, and is important for organization.</p>
+      </item>
+    </div>
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Class Attribute</h1>
+        <p class="topic-info"> There’s another way to get more specific with formatting and style. The class attribute allows you to create more specific elements, CSS and JS can call on the class name and affect only the elements with the specific class name.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/ClassAttributeExample.png" alt="<div>
+          <h1 class=”header top-header”>This is the first header</h1>
+          <p class = “first-paragraph”>This is the first paragraph</p>
+          <h1 class =”header”>This is another header</h1>
+          <p class =”second-paragraph”>This is another paragraph</p>
+        </div>">
+      </div>
+      <div class="topic-side">
+        <p class="topic-info"> There’s another way to get more specific with formatting and style. The class attribute allows you to create more specific elements, CSS and JS can call on the class name and affect only the elements with the specific class name.</p>
+      </div>
+    </div>
+  <!-- What is the default layout of HTML elements? Some things to consider.. -->
+    <div class="topic-division">
+      <h1 class="topic-define">Block vs. Inline Layout</h1>
+      <p class="topic-info">Not all elements behave the same way regarding layout. Layout behavior can be broken down into block vs inline. Block elements will stack on top of each other, w/ each one starting and ending on its own line. However inline elements take up as much space as it needs, and are more commonly found nested inside a different element. Most elements are block elements; some common ones are h1-h6, p, and div. Common inline elements are a, strong, and button</p>
+    </div>
+  </container>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+  
+
+</body>
+
+</html>

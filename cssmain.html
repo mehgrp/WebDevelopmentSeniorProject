@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- credit <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a> -->
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>Web Development</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="menu">
+    <button class="nav-but left" onclick="window.location.href='index.html';">Home</button>
+    <div class="right">
+      <button class="nav-but" onclick="window.location.href='htmlmain.html';">HTML</button>
+      <button class="nav-but" onclick="window.location.href='cssmain.html';">CSS</button>
+      <button class="nav-but" onclick="window.location.href='javascriptmain.html';">JavaScript</button>
+      <button class="nav-but" onclick="window.location.href='webdesign.html';">Web Design</button>
+    </div>
+  </nav>
+  <!-- end of navigation menu -->
+  <!-- page label -->
+  <div class="page-label">
+    <div class="label-column">
+      <h1 class="css-title">CSS</h1>
+<!-- info + practice page buttons -->
+      <div class="lang-content-nav">
+        <button class="content-but" onclick="window.location.href='cssmain.html';">CSS Information</button>
+        <button class="content-but" onclick="window.location.href='csspractice.html';"">CSS Practice</button>
+      </div>
+    </div>
+    <div class="label-column"> 
+      <img class="top-image" src="Images/csstopimage.jpg">
+      <p class="caption">Image by Cup of Couple via Pexels</p>
+    </div>
+  </div>
+<!-- what is CSS + what is the basic syntax -->
+  <container class="topics">
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">CSS</h1>
+        <p class="topic-info">CSS stands for Cascading Style Sheets. Acts as the body’s skin/design and style elements of the website. Also not a programming language. Can make the same HTML file look completely different.</p>
+        <h1 class="topic-define">Basic Syntax</h1>
+        <p class="topic-info">Luckily all CSS rules are formatted the same, except for classes with a minor difference. All characters are lower case and dashes replace spaces. Using class names as a selector looks a little different. CSS rules tell the browser how to display our HTML, and consist of the whole block of code assigned to an element. Here’s a basic example.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/BasicCSSSyntax.png" alt="h1 {
+            color: #333333;
+            font-size: 25px;
+           }  “h1” is called a selector. It selects what HTML element to apply declarations to. “Color” or “font-size” are properties. They assign styles or behaviors to the HTML element. “#333333” or “25px” are values. While the property defines what should be changed, the value specifies exactly what. Values can be color names or numbers followed by units, etc. Most common units used in CSS are px, %, or em. Colors can use a hex code or a color name, but hex codes are more specific and common to see. Combined, a property and its value is called a declaration. So, “color: #333333;” is a declaration. There can be multiple declarations in a rule set. Note how a colon has to come after the property and declarations have to end with a semicolon.">
+      </div>
+    </div>
+  <!-- class selector syntax -->
+    <div class="topic-division-single-hori">
+      <div class="indi-hori">
+        <img class="topic-img" src="Graphics/ClassSelectorSyntax.png" alt=".first-heading {
+            color: #333333;
+            font-size: 25px;
+           }">
+      </div>
+      <div class="indi-hori">
+        <h1 class="topic-define">Class Selector</h1>
+        <p class="topic-info">Using class names as a selector looks a little different. The selector has to be a period followed by the class name.</p>
+      </div>
+    </div>
+  <!-- What are some common ways to use CSS? -->
+    <div class="topic-division-single-hori float-right">
+      <div class="indi-hori">
+        <h1 class="topic-define">Common Uses</h1>
+        <ul class="topic-info">
+          <li class="topic-info">Text: font, size, weight, and color can all be changed</li>
+          <li class="topic-info">Borders: has to be defined in CSS if you want it, not automatic, can apply to specific sides or all of them, can set the thickness, style, and color</li>
+        </ul>
+      </div>
+      <div class="indi-hori">
+        <img class="topic-img" src="Graphics/BorderPropertySyntax.png" alt="p {
+           border: 1px solid red;
+          }  This creates a border all around a paragraph element. The border is 1px in thickness, solid and the color red. Other styles for borders could be dotted, dashed, double etc.">
+      </div>
+    </div>
+    <div class="topic-division-single-hori">
+      <div class="indi-hori">
+        <h1 class="topic-define">Buttons</h1>
+        <p class="topic-info">With buttons, css can get more advanced. button:hover is a pseudo-selector. This means that only when the button is hovered over will this rule be applied. All other times it will be ignored. cursor: pointer; will change what the cursor looks like when it hovers over the button. An additional property that can be applied is border-radius. This will round the corners of the border based on the value you put in.</p>
+      </div>
+      <div class="indi-hori">
+        <img class="topic-img" src="Graphics/PseudoSelectorSyntax.png" alt="button {
+              background-color: white;
+              border: 1px solid black;
+             }
+          button:hover {
+              border-bottom: 5px solid black;
+              cursor: pointer;}">
+      </div>
+    </div>
+  <!-- How can you change the layout? What are some basic aspects to consider? -->
+    <div class="topic-division-single">
+      <item>
+        <h1 class="topic-define">Layout</h1>
+        <p class="topic-info">As we know, HTML elements have a default layout behavior. With CSS we can override any element with the layout behavior we want. We can force button elements to have block behavior, or paragraph elements to be inline.</p>
+      </item>
+      <item>
+        <h1 class="topic-define">The Box Model</h1>
+        <p class="topic-info">The Box Model is a model to help control layout and design in CSS. Each element can be considered a rectangle. Every element consists of each piece listed above. Content, the actual text is surrounded by padding which gives space between the content and the border. The margin creates space outside the border and between elements. By default most elements don’t have any padding. Padding is a CSS property, it can be applied all around or to specific sides. The same concept can be applied to margins. Keep in mind that padding is within the border while margins are outside the border.</p>
+        <img class="topic-img" src="Graphics/boxmodel.png">
+      </item>
+    </div>
+    <div class="topic-division">
+      <div class="topic-side">
+        <h1 class="topic-define">Default Browser Behavior</h1>  
+        <p class="topic-info">Every time you create a new project, the browser will put in some default margin and padding. This is mainly to help developers who don’t plan to use CSS. Since we do, it can affect our layout. To truly design and customize our sites we should use this code in CSS to “reset” those properties.</p>
+      </div>
+      <div class="topic-side">
+        <img class="topic-img" src="Graphics/ResetDefaultBehavior.png" alt="* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }  * signifies that this rule should be applied to every element. The last declaration means that padding and border are included in the element’s total width and height."> 
+      </div>
+    </div>
+    <!-- Sizing images:  -->
+    <div class="topic-division">
+      <h1 class="topic-define">Sizing Images</h1>
+      <div class="vertical-info">
+        <p class="topic-info">I previously mentioned the width and height of an element. This can be easily explained through sizing images. A lot of the time images we put in won’t be the size that we want. We can fix this by using the width and height properties in CSS. Typically, you only want to use either width or height since using both will change the ratio of the image. If you only use one of the two the other will naturally change based on the original ratio. If you do want to change both, then the object-fit property may be helpful. If you want to use both but the ratio of the image changes and it becomes too squished or stretched, then the object-fit property will solve this for you. This declaration</p>
+        <p class="topic-info">object-fit: cover;</p>
+        <p class="topic-info">Will alter the photo so it will fit the new width and height without looking odd. Although the photo now matches the desired quality, some of the original image may be cut out from the resize. See the difference below.</p>
+      </div>
+    </div>
+    <!-- compare examples -->
+    <div class="image-comparison-container">
+      <img class="img-compare" src="Images/DistortedVer.png">
+      <img class="img-compare" src="Images/FixedVer.png">
+    </div>
+    <!-- what is flexbox? How to use it? -->
+    <div class="topic-division-single">
+      <item class="flexbox">
+        <h1 class="topic-define">Flexbox</h1>
+        <p class="topic-info">Before learning the actual properties it’s important that you understand nesting first. You should know that any element that wraps other elements is considered a parent/container. Any elements that are wrapped by another element are considered a child/item. Any element that’s directly under a parent (1 indentation) is considered a direct child. If another element is wrapped by the direct child (2 indentations) then it is not a direct child of the initial parent but technically a grandchild while a direct child of the middle element. Always add the</p>
+        <p class="topic-info">display: flex;</p>
+        <p class="topic-info">declaration to the parent element. Also, when using flexbox properties, the parent itself doesn’t change, but the way its children elements are organized/look may change.</p>
+      </item>
+      <item class="flexbox">
+        <h1 class="topic-define">Flexbox Properties</h1>
+        <ul class="topic-info">
+          <li class="topic-info">justify-content: center children, space around/between children, control how content sits on main axis(default=horizontal)</li>
+          <li class="topic-info">align-items: control how content sits on secondary axis</li>
+          <li class="topic-info">flex-direction: changes direction of the flex container; direction of container defines main axis</li>
+          <li class="topic-info">flex-wrap: by default flex box tries to keep all children on one line(horizontal or vertical), this property allows children to wrap onto the next line(s)</li>
+        </ul>
+        <p class="topic-info">Play <a class="topic-info" href="https://flexboxfroggy.com/"> Flexbox Froggy</a> for further understanding if needed.</p>
+      </item>
+    </div>
+  </container>
+  <!-- start of footer -->
+  <footer class="end-of-page">
+    <div class="foot-left">
+      <p class="foot">Website made with Replit</p>
+      <p class="foot">Favicon by Freepik via Flaticon</p>
+    </div>
+    <div class="foot-right">
+      <button class="foot footing" onclick="window.location.href='addrsc.html';">Additional Resources</button>
+      <button class="foot footing" onclick="window.location.href='preassessment.html';">Entrance Survey</button>
+      <button class="foot footing" onclick="window.location.href='postassessment.html';">Exit Survey</button>
+  </footer>
+  <!-- end of footer info -->
+
+  <script src="script.js"></script>
+ 
+
+</body>
+
+</html>
