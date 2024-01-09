@@ -47,6 +47,10 @@ body {
   background:#FFFFFF;
 }
 
+.long {
+  width:155px;
+}
+
 .left {
   float: left;
 }
@@ -618,3 +622,4 @@ ul {
   border:0;
   margin:2%;
 }
+/* scroll to top button */
